@@ -36,6 +36,18 @@ public class Magpie3 {
 				|| findKeyword(statement, "sister") >= 0
 				|| findKeyword(statement, "brother") >= 0) {
 			response = "Tell me more about your family.";
+		} else if (findKeyword(statement, "dog") >= 0
+				|| findKeyword(statement, "cat") >= 0
+				|| findKeyword(statement, "cats") >= 0
+				|| findKeyword(statement, "dogs") >= 0) {
+			response = "Tell me more about your family.";
+		} else if (findKeyword(statement, "why") >= 0
+				|| findKeyword(statement, "when") >= 0
+				|| findKeyword(statement, "what") >= 0
+				|| findKeyword(statement, "where") >= 0
+				|| findKeyword(statement, "who") >= 0
+				|| findKeyword(statement, "how") >= 0) {
+			response = "I ask myself that question ever day.";
 		} else {
 			response = getRandomResponse();
 		}
